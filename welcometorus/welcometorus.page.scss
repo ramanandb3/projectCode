@@ -1,0 +1,107 @@
+@mixin perspective($ppx){
+    -moz-perspective:$ppx;
+    perspective:$ppx;
+    -webkit-perspective:$ppx;
+  }
+  @mixin backface-visibility($state){
+    backface-visibility:$state;
+    -webkit-backface-visibility:$state;
+    -moz-backface-visibility:$state;
+    -ms-backface-visibility:$state;
+  }
+  @mixin transform($AxisDeg){
+    transform:$AxisDeg;
+    -webkit-transform:$AxisDeg;
+    -moz-transform:$AxisDeg;
+    -ms-transform:$AxisDeg;
+  }
+  body{
+    background-color:blue;
+    //need to add support for all browsers
+  }
+  
+  #container{
+    @include perspective(800px);
+    height:18rem;
+    width:15rem;
+    position:relative;
+    margin:auto;//just to center the card
+    &:hover{
+      #card{
+        @include transform(rotateY(180deg));//so you don't get that weird flip issue when the card moves away from your cursor. 
+      }
+    }
+  }
+  #card{
+    @include backface-visibility(hidden);
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transition: transform 1s;//control the speed of the flip
+    h2, p{
+      text-align:center;
+      font-family:sans-serif;
+    }
+    p{
+      color:#19c369;
+      font-size:1.5rem;
+    }
+    h2{
+      color:#DAF7A6;
+      background-color:#c35219;
+      margin-top:0;
+      padding-top:16px;
+      padding-bottom:16px;
+      border-top-left-radius:5px;//this is to match the border-radis of #front and #back
+      border-top-right-radius:5px;//this is to match the border-radis of #front and #back
+    }
+  }
+  #front, #back{
+    background-color:#008377;
+    border-radius:5px;
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    @include backface-visibility(hidden);
+  }
+  #back{
+    @include transform(rotateY(180deg));
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    //this is a rough fix for IE 11. Far from perfect.
+     #card{
+      @include backface-visibility(visible);
+    }
+    #container{
+      #back{
+        opacity:0;
+        @include backface-visibility(visible);
+        transition:opacity ease-in 1s;
+        transition:opacity ease-out 1s;
+      }
+      &:hover{
+        #back{
+          opacity:1;
+          @include transform(rotateY(180deg));//so you don't get that weird flip issue when the card moves away from your cursor.
+        }
+      }
+    }
+  }
+  .flip_cover{
+    display: flex;
+    flex-direction:row-reverse;
+    background-color: cadetblue;
+  }
+  .left{
+    background-color: cornflowerblue;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+
+  }
+  #log{
+    background-color: darkgreen;
+    width:120px;
+  }
+

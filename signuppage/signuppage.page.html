@@ -1,0 +1,26 @@
+
+  <div class="container" id="signup">
+    <form action="" [formGroup]="LoginInputValue" (ngSubmit)="Signup()">
+      <div> <input type="text" placeholder="fname" formControlName="fname"></div>
+      <span *ngIf="!v.fname.value && v.fname.invalid"> fname is required</span>
+      <div> <input type="text" placeholder="lastame" formControlName="lastname"></div>
+      <span *ngIf="!v.lastname.value && v.lastname.invalid"> lastname is required</span>
+      <div> <input type="text" placeholder="username" formControlName="username"></div>
+      <span *ngIf="!v.username.value && v.username.invalid"> username is required</span>
+      <div> <input type="password" placeholder="password" formControlName="password"></div>
+      <span *ngIf="!v.password.value && v.password.invalid"> password is required</span>
+      <div><input type="password" placeholder="confirm password" formControlName="confirmpassword"></div>
+      <span *ngIf="!v.confirmpassword.value && v.confirmpassword.invalid"> password is required</span>
+      <div>
+        <button type="submit" >Signup</button>
+        <div (click)="already()"> Already registered?</div>
+      </div>
+    </form>
+        
+  </div>
+      
+  
+
+
+
+

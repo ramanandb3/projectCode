@@ -1,0 +1,59 @@
+.container {
+  background-image: url(https://cdn.decoratorist.com/wp-content/uploads/rich-colorful-geometric-your-mobile-708514.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-Form{
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color:rgb(201, 102, 85);
+  opacity:0.7;
+}
+
+
+
+.container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+.container a {
+  text-decoration: none;
+}
+#btn{
+  background-color: red;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+
+}
+span{
+  cursor: pointer;
+}
+#username{
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  border-radius: 5px;
+
+}
+#password{
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  border-radius: 5px;
+}

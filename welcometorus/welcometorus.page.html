@@ -1,0 +1,275 @@
+
+{{asd}}
+<ion-content>
+   <div id="side" class="left">
+  <div id="welcome" class="Torus"><h1>welcome Torus</h1></div>
+  <div id="log"><a><button (click)="logout()">Log-Out</button></a> </div>
+
+
+  </div>
+<div *ngFor="let item of moviesList">
+  <h1>Movies title: {{item.name}}</h1>
+  <p>Movies Description:{{item.description}}</p>
+</div>
+  <!-- <div class="flip_cover">
+    <div class="box">
+      <div id="container">
+        <div id="card">
+          <div id="front">
+            <h2></h2>
+            <p> </p>
+          </div>
+          <div id="back">
+            <h2></h2>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="box">
+        <div id="container">
+          <div id="card">
+            <div id="front">
+              <h2>Frozen</h2>
+              <p></p>
+            </div>
+            <div id="back">
+              <h2></h2>
+              <p>  </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="box">
+          <div id="container">
+            <div id="card">
+              <div id="front">
+                <h2>Vampire Diaries</h2>
+                <p>
+                  The Vampire Diaries is an American supernatural teen drama television series developed by Kevin Williamson 
+                </p>
+              </div>
+              <div id="back">
+                <h2>description</h2>
+                <p> Loosely based on the German fairy tale Rapunzel in the collection of folk tales published by the Brothers Grimm</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="box">
+            <div id="container">
+              <div id="card">
+                <div id="front">
+                  <h2>Her</h2>
+                  <p>It is based on AI based love story.This is showing future of ours in which a person is fully dependent on machines.  </p>
+                </div>
+                <div id="back">
+                  <h2>description</h2>
+                  <p> Theodore is a lonely man in the final stages of his divorce. When he's not working as a letter writer, his down time is spent playing video games and occasionally hanging out with friends.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="box">
+              <div id="container">
+                <div id="card">
+                  <div id="front">
+                    <h2>Interstellar</h2>
+                    <p>Interstellar is a 2014 epic science fiction drama film co-written, directed and produced by Christopher Nolan. </p>
+                  </div>
+                  <div id="back">
+                    <h2>description</h2>
+                    <p>Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="box">
+                <div id="container">
+                  <div id="card">
+                    <div id="front">
+                      <h2>The Matrix</h2>
+                      <p>The Matrix is a 1999 science fiction action film written and directed by the Wachowskis. </p>
+                    </div>
+                    <div id="back">
+                      <h2>description</h2>
+                      <p>When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="box">
+                  <div id="container">
+                    <div id="card">
+                      <div id="front">
+                        <h2>Avtar</h2>
+                        <p> Avatar: Directed by James Cameron. With Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang </p>
+                      </div>
+                      <div id="back">
+                        <h2>description</h2>
+                        <p> A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="box">
+                    <div id="container">
+                      <div id="card">
+                        <div id="front">
+                          <h2>The Shawshank Redemption</h2>
+                          <p>Audience Reviews for The Shawshank Redemption Oct 10, 2019 Based on a novella by Stephen King, The Shawshank Redemption is a harrowing tale about the triumph of the human spirit. </p>
+                        </div>
+                        <div id="back">
+                          <h2>description</h2>
+                          <p> Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="box">
+                      <div id="container">
+                        <div id="card">
+                          <div id="front">
+                            <h2>Chandigarh Kare Aashiqui</h2>
+                            <p>Chandigarh Kare Aashiqui is a 2021 Indian Hindi-language romantic comedy-drama film directed by Abhishek Kapoor  </p>
+                          </div>
+                          <div id="back">
+                            <h2>description</h2>
+                            <p> Manu, a bodybuilder from Chandigarh falls in love with Maanvi, a Zumba teacher. All seems well until a shocking revelation causes turmoil in their love story.</p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+              </div>
+              <div class="flip_cover">
+                <div class="box">
+                  <div id="container">
+                    <div id="card">
+                      <div id="front">
+                        <h2>Gangs Of Wasseypur</h2>
+                        <p> Gangs of Wasseypur: Directed by Anurag Kashyap. With Manoj Bajpayee, Richa Chadha, Nawazuddin Siddiqui, Tigmanshu Dhulia. </p>
+                      </div>
+                      <div id="back">
+                        <h2>description</h2>
+                        <p> In the town of Wasseypur, a town in Bengal in the 1940s controlled by a family known as the Qureshi's a man named Shahid Khan begins robbing trains using the name of the Qureshi's famed ancestor,Sultana,after being forced to leave the village by the Qureshi leader he goes to the nearby city of Dhanbad</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="box">
+                    <div id="container">
+                      <div id="card">
+                        <div id="front">
+                          <h2>Frozen</h2>
+                          <p>Frozen is a 2013 American computer-animated musical fantasy film produced by Walt Disney Animation Studios</p>
+                        </div>
+                        <div id="back">
+                          <h2>description</h2>
+                          <p> The 53rd Disney animated feature film, it is inspired by Hans Christian Andersen's fairy tale "The Snow Queen". </p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="box">
+                      <div id="container">
+                        <div id="card">
+                          <div id="front">
+                            <h2>The Big Short </h2>
+                            <p>The Big Short: Directed by Adam McKay. With Ryan Gosling, Rudy Eisenzopf, Casey Groves, Charlie Talbert. </p>
+                          </div>
+                          <div id="back">
+                            <h2>description</h2>
+                            <p> he Big Short was not the first film adaptation of a successful non-fiction book covering the financial crisis</p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="box">
+                        <div id="container">
+                          <div id="card">
+                            <div id="front">
+                              <h2>Peaky Binders</h2>
+                              <p>Peaky Blinders: Created by Steven Knight. With Cillian Murphy, Paul Anderson, Helen McCrory, Sophie Rundle.  </p>
+                            </div>
+                            <div id="back">
+                              <h2>description</h2>
+                              <p> A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.</p>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="box">
+                          <div id="container">
+                            <div id="card">
+                              <div id="front">
+                                <h2>Badlapur</h2>
+                                <p> Badlapur: Directed by Sriram Raghavan. With Varun Dhawan, Nawazuddin Siddiqui, Yami Gautam, Huma Qureshi.</p>
+                              </div>
+                              <div id="back">
+                                <h2>description</h2>
+                                <p> Raghu lost his wife Misha and son during a bank robbery which was committed by Liak and Harman.</p>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="box">
+                            <div id="container">
+                              <div id="card">
+                                <div id="front">
+                                  <h2>CODA</h2>
+                                  <p> CODA: Directed by Sian Heder. With Emilia Jones, Troy Kotsur, Daniel Durant, John Fiore.  </p>
+                                </div>
+                                <div id="back">
+                                  <h2>description</h2>
+                                  <p>
+                                    As a CODA (Child of Deaf Adults) Ruby is the only hearing person in her deaf family.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                            <div class="box">
+                              <div id="container">
+                                <div id="card">
+                                  <div id="front">
+                                    <h2>Titanic</h2>
+                                    <p>Titanic is a 1997 American epic romance and disaster film directed, written, produced, and co-edited by James Cameron </p>
+                                  </div>
+                                  <div id="back">
+                                    <h2>description</h2>
+                                    <p> A British passenger liner operated by the White Star Line that sank in the North Atlantic Ocean on 15 April 1912, after striking an iceberg during her maiden voyage from Southampton to New York City.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              <div class="box">
+                                <div id="container">
+                                  <div id="card">
+                                    <div id="front">
+                                      <h2>Iron Man</h2>
+                                      <p> Iron Man: Directed by Jon Favreau. With Robert Downey Jr., Terrence Howard, Jeff Bridges, Gwyneth Paltrow </p>
+                                    </div>
+                                    <div id="back">
+                                      <h2>description</h2>
+                                      <p> After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                                <div class="box">
+                                  <div id="container">
+                                    <div id="card">
+                                      <div id="front">
+                                        <h2>The Avengers</h2>
+                                        <p> The Avengers: Directed by Joss Whedon. With Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth </p>
+                                      </div>
+                                      <div id="back">
+                                        <h2>description</h2>
+                                        <p> Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                          </div> -->
+</ion-content>
